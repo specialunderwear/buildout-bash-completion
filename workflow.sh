@@ -1,6 +1,5 @@
 #! /bin/bash
 
-set -x verbose
 shopt -s expand_aliases
 source virtualenvwrapper.sh
 
@@ -12,6 +11,8 @@ workon buildout-bash-completion
 sleep 1
 cd example
 setbuildout
+
+set -x verbose
 
 sleep 1
 cdco
@@ -49,6 +50,7 @@ kill $!
 
 sleep 1
 cds tornado
+ntest
 develop up
 
 echo "profit"
