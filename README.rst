@@ -8,7 +8,8 @@ Requires virtualenv and virtualenvwrapper.
     cdco # cd to buildout root
     cds voxin # (will autocomplete with tab and will cd into the project named voxin in the src dir)
     buildout # will run buildout, but from the buildout root.
-    ntest # will run ./bin/test (pbp.recipe.noserunner) from the buildout root in the context of your current directory
+    ntest # will run ./bin/test (pbp.recipe.noserunner) from the buildout root,
+          # in the context of your current directory
     cdomelette # will cd into the omelette dir.
 
 Please take a look at (or run) ``workflow.sh`` which demonstrates each command and
