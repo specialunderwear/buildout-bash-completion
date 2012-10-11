@@ -10,3 +10,6 @@ Requires virtualenv and virtualenvwrapper.
     buildout # will run buildout, but from the buildout root.
     ntest # will run ./bin/test (pbp.recipe.noserunner) from the buildout root
     cdomelette # will cd into the omelette dir.
+
+Please take a look at ``workflow.sh`` which demonstrates each command and
+the integration with virtualenv.
