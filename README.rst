@@ -1,6 +1,8 @@
 Quickly navigate your buildout.
 ===============================
 
+Requires virtualenv and virtualenvwrapper.
+
 ::
 
     cdco # cd to buildout root
