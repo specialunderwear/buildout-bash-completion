@@ -20,7 +20,7 @@ python bootstrap.py --distribute
 cd /tmp
 
 sleep 1
-buildout -v
+yes | buildout -v
 cdco
 
 sleep 2
@@ -51,6 +51,6 @@ kill $!
 sleep 1
 cds tornado
 ntest
-develop up
+yes | develop up
 
 echo "profit"
