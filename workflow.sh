@@ -48,6 +48,10 @@ voxin &
 sleep 1
 kill $!
 
+supervisord
+supervisorctl status
+supervisorctl shutdown
+
 sleep 1
 cds tornado
 ntest
