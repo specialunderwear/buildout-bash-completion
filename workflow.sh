@@ -17,6 +17,9 @@ set -x verbose
 sleep 1
 cdco
 python bootstrap.py --distribute
+
+# run buildout from anywhere
+sleep 1
 cd /tmp
 
 sleep 1
@@ -26,6 +29,7 @@ cdco
 sleep 2
 yes | ./bin/buildout -v
 
+# Quickly navigate your buildout
 sleep 2
 cds tornado
 
@@ -35,6 +39,7 @@ cdco
 cds voxin
 python voxin/server.py
 
+# Use omelette to extend your python path
 sleep 1
 cdomelette
 add2virtualenv .
