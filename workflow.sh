@@ -53,8 +53,9 @@ voxin &
 sleep 1
 kill $!
 
+# bin is in your path
 supervisord
-supervisorctl status
+supervisorctl restart all
 supervisorctl shutdown
 
 sleep 1
