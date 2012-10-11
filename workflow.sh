@@ -1,9 +1,13 @@
 #! /bin/bash
 
-mkvirtualenv example
-cp -f postactive ~/.virtualenvs/example/bin/
+set -x verbose
+shopt -s expand_aliases
+source virtualenvwrapper.sh
+
+mkvirtualenv buildout-bash-completion
+cp -f postactivate ~/.virtualenvs/buildout-bash-completion/bin/
 deactivate
-workon example
+workon buildout-bash-completion
 
 sleep 1
 cd example
@@ -19,7 +23,7 @@ buildout -v
 cdco
 
 sleep 2
-./bin/buildout -v
+yes | ./bin/buildout -v
 
 sleep 2
 cds tornado
